@@ -11,11 +11,11 @@ mod imagecrop;
 const MAX_WIDTH: u32 = 600;
 const MAX_HEIGHT: u32 = 80;
 const MAX_FONT_SIZE: f32 = 125.0;
-const FAR_LEFT: u32 = 80;
-const FAR_TOP: u32 = 800;
+const FAR_LEFT: u32 = 170;
+const FAR_TOP: u32 = 984;
 
 const FONT_FILE: &[u8] = include_bytes!("PingFang-Bold.ttf") as &[u8];
-const TEMPLATE_BUF: &[u8] = include_bytes!("template.png") as &[u8];
+const TEMPLATE_BUF: &[u8] = include_bytes!("buy-your-ticket.png") as &[u8];
 
 fn write_to_crop(watermark_text: &str) -> u32 {
     let buffer = include_bytes!("crop.png") as &[u8];
